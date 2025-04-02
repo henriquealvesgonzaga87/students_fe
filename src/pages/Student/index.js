@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "../../styles/GlobalStyle";
+import { Container } from "../../styles/GlobalStyles";
 
 
 export default function Student() {

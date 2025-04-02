@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { isEmail } from "validator";
 import { get } from "lodash";
 
-import { Container } from "../../styles/GlobalStyle";
+import { Container } from "../../styles/GlobalStyles";
 import { Form } from "./styled";
 import axios from '../../services/axios';
 import history from '../../services/history';
