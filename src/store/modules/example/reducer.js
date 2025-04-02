@@ -1,24 +1,24 @@
 import * as types from '../types';
 
 const initialState = {
-  clickedButton: false
-}
+  botaoClicado: false,
+};
 
-export default function (state=initialState, action) {
-  switch(action.type) {
-    case types.CLICKED_BUTTON_SUCCESS: {
+export default function(state = initialState, action) {
+  switch (action.type) {
+    case types.BOTAO_CLICADO_SUCCESS: {
       console.log('Sucesso');
-      const newState = {...state};
-      newState.clickedButton = !newState.clickedButton;
+      const newState = { ...state };
+      newState.botaoClicado = !newState.botaoClicado;
       return newState;
     }
 
-    case types.CLICKED_BUTTON_FAILURE: {
-      console.log('Deu erro :(');
+    case types.BOTAO_CLICADO_FAILURE: {
+      console.log('Deu erro =(');
       return state;
     }
 
-    case types.CLICKED_BUTTON_REQUEST: {
+    case types.BOTAO_CLICADO_REQUEST: {
       console.log('Estou fazendo a requisição');
       return state;
     }
@@ -27,4 +27,4 @@ export default function (state=initialState, action) {
       return state;
     }
   }
-};
+}
