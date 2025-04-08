@@ -19,7 +19,7 @@ function* loginRequest({ payload }) {
   } catch(e) {
     toast.error('Invalid credentials');
 
-    yield put(actions.loginFailure);
+    yield put(actions.loginFailure());
   }
 }
 
