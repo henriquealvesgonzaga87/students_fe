@@ -206,5 +206,5 @@ export default function Student({ match }) {
 }
 
 Student.propTypes = {
-  macth: PropTypes.shape({}).isRequired,
+  match: PropTypes.shape({}).isRequired,
 }
